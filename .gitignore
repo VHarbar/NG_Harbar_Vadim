@@ -1,0 +1,9 @@
+*bin/
+*obj/
+*.cbp
+*.layout
+*.depend
+*.exe
+*.pro
+*.pro.user
+*/build*
