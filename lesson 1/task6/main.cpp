@@ -2,10 +2,9 @@
 
 using namespace std;
 
-int main ()
-{
+int
+main (){
   int b = 0;
-  cout<<"Vvedite razmer";
   cin >> b;
   for (int i = 0; i < b; i++)
     {
@@ -39,6 +38,20 @@ int main ()
 	}
       cout << endl;
     }
-
+  cout << endl;
+  for (int i = 1; i <= b; i++)
+    {
+      for (int j = 0; j < b - i; j++)
+	{
+	  cout << " ";
+	}
+      for (int j = 0; j < i; j++)
+	{
+	  cout << "*";
+	}
+      cout << endl;
+    }
+  cout << endl;
   return 0;
 }
+
