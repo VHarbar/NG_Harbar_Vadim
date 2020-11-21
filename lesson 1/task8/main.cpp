@@ -1,18 +1,23 @@
-#include <iostream>
+#include <iostream> 
 
 using namespace std;
 
-int main()
-{
-int n;
-cin>>n;
-for(int i=0;i<n-1;i++){
-    for(int j=i;j<n;j++)
-    cout<<" ";
-    for(int k=n;k>=n-(2*i);k--)
-        cout<<'*';
-        cout<<endl;
+int main(){
+  int b;
+  cin >> b;
+  for (int i = 0; i < b - 1; i++)
+    {
+      for (int j = i; j < b; j++)
+	cout << " ";
+      for (int k = b; k >= b - (2 * i); k--)
+	cout << '*';
+      cout << endl;
+    }
+  for (int j = 1; j <= b; j++)
+    {
+      cout << " ";
+    }
+  cout << "*";
+  return 0;
 }
 
-return 0;
-}
