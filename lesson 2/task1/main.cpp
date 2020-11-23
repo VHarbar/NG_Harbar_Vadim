@@ -2,27 +2,28 @@
 
 using namespace std;
 
-int main () {
-  int a = 0, b = 0;
-  int c[10];
-  for (b = 0; b < 10; b++)
+int main ()
+{
+  int school[10];
+  int mySchool = 0;
+  int num = 0;
+  for (int num = 0; num < 10; num++)
     {
-      cout << "enter num of school:  ";
-      cin >> c[b];
+      cout << "Enter school number: ";
+      cin >> school[num];
     }
-  cout << "Enter number of your school";
-  cin >> a;
-  for (a = 0; a < 10; a++)
+  cout << "Now Enter your school number: ";
+  cin >> mySchool;
+  for (int num = 0; num < 10; num++)
     {
-      if (c[b] == a)
+      if (school[num] == mySchool)
 	{
-	  cout << "I know this";
+	  cout << "I know this school!";
 	  break;
 	}
-      else
+      else if (num == 9)
 	{
-	  cout << "I dont know";
-	  break;
+	  cout << "I don't know this school.";
 	}
     }
   return 0;
