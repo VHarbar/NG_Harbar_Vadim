@@ -4,7 +4,6 @@ using namespace std;
 
 int main ()
 {
-start:
   int cards[10];
   int NumCard = 0;
   int sum = 0;
@@ -27,12 +26,10 @@ start:
 	  cout << cards[index] << " ";
 	}
       cout << endl << "Money on cards: " << sum;
-      cout << endl << "Press f to exit or b for restart: ";
+      cout << endl << "Press b for exit: ";
       cin >> checkbox;
       if (checkbox == 'b')
-	goto start;
-      if (checkbox == 'f')
-	break;
+	  break;
     }
   return 0;
 }
