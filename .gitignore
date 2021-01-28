@@ -4,6 +4,5 @@
 *.layout
 *.depend
 *.exe
-*.pro
 *.pro.user
 */build*
