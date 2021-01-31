@@ -12,7 +12,7 @@ char s[500];
 cin.getline(s,500);
 while (s[i]!='\0')
 {
-    if ((s[i]!=' ') && (s[i]!='.') && (s[i]!=','))
+    if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
     {
             counter++;
             if (counter>max)

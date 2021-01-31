@@ -15,9 +15,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 public slots:
-    void B1();
-    void B2();
-    void process_result();
+   void process_result();
 
 private:
     Ui::MainWindow *ui;

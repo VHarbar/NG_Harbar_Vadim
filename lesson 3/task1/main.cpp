@@ -5,18 +5,14 @@ using namespace std;
 int main()
 {
     char str[255];
-    int counter = 1;
-
-    cout << "Enter string: ";
+    int amount = 1;
+    cout << "Enter the string: ";
     cin.getline(str, 255);
-
-    for(int num = 0; str[num + 1] != '\0'; num++)
+    for (int index = 0; str[index+1] != '\0'; index++)
     {
-        if(((str[num] >= 'a' && str[num] <= 'z') && !(str[num + 1] >= 'a' && str[num + 1] <= 'z')) || ((str[num] >= 'A' && str[num] <= 'Z') && !(str[num + 1] >= 'A' && str[num + 1] <= 'Z')))
-        {
-            counter++;
-        }
+        if((((str[index] >= 'a' &&str[index] <= 'z') || (str[index] >= 'A' && str[index] <= 'Z')) && !((str[index+1] >= 'a' && str[index+1] <= 'z') || (str[index+1] >= 'A' && str[index+1] <= 'Z'))) || (str[index] >= 'a' &&str[index] <= 'z') && (str[index+1] >= 'A' &&str[index+1] <= 'Z'))
+            amount++;
     }
-
-    cout << "Result: " << counter;
+    cout << "Result: " << amount;
+    return 0;
 }
